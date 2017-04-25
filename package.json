@@ -1,0 +1,15 @@
+{
+  "name": "hui-func",
+  "version": "0.0.1",
+  "description": "hui javascript utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev"
+  },
+  "keywords": [
+    "hui",
+    "func"
+  ],
+  "author": "alucardlockon",
+  "license": "MIT"
+}
