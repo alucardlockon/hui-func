@@ -4,12 +4,19 @@
   "description": "hui javascript utils",
   "main": "index.js",
   "scripts": {
-    "test": "dev"
+    "test": "mocha"
   },
   "keywords": [
     "hui",
     "func"
   ],
   "author": "alucardlockon",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-es2015": "^6.24.1",
+    "mocha": "^3.10.8",
+    "webpack": "^2.4.1"
+  }
 }
