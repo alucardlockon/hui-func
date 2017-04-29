@@ -2,9 +2,9 @@
  * Created by yuwh on 2017/4/29.
  * dom基本查询
  */
-let fp = require('fp')
+let fp = require('./fp')
 
-let queryDom = function (selector) {
+let query = function (selector) {
     selector = selector ? selector.trim() : ''
     if (/^#\w+$/.test(selector)) {
         return document.getElementById(selector.slice(1))
@@ -15,4 +15,4 @@ let queryDom = function (selector) {
     }
 }
 
-exports = queryDom
+exports.query = query

@@ -4,7 +4,8 @@
   "description": "hui javascript utils",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive"
+    "test": "mocha --recursive",
+    "build": "webpack && copy dist\\hui-func.js test\\html"
   },
   "keywords": [
     "hui",
