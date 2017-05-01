@@ -2,9 +2,9 @@
  * Created by yuwh on 2017/4/29.
  * dom基本查询
  */
-let fp = require('./fp')
+const fp = require('./fp')
 
-let query = function (selector) {
+const query = function (selector) {
     selector = selector ? selector.trim() : ''
     if (/^#\w+$/.test(selector)) {
         return document.getElementById(selector.slice(1))

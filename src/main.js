@@ -5,10 +5,12 @@ const core=require('./core')
 const dom=require('./dom')
 const fp=require('./fp')
 const type=require('./type')
+const array=require('./array')
 
 module.exports={
     core:core,
     dom:dom,
     fp:fp,
-    type:type
+    type:type,
+    array:array
 };
