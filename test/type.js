@@ -20,6 +20,12 @@ describe('type', function () {
             assert.equal(false, type.isArray('1222'));
         })
     })
+    describe('#isDate()', function () {
+        it('should be ok', function () {
+            console.log(type.getProtoType(new Date()));
+            console.log(type.isDate(new Date()));
+        })
+    })
     describe('#isFunction()', function () {
         it('should be true', function () {
             assert.equal(true, type.isFunction(x => x));
