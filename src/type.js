@@ -40,7 +40,8 @@ const isFunction = (value) => typeof value === 'function'
 const isDomElement = (value) => isObjectLike(value) && value.nodeType && value.nodeType === 1
 
 //是否日期
-const isDate = (value) => isObjectLike(value) && getProtoType(value) === '[Object Date]'
+const isDate = (value) => (isObjectLike(value) && getProtoType(value) === '[Object Date]')
+    ||(isFunction(value.getFullYear)&&isFunction(value.getMonth)&&isFunction(value.getDate))
 
 exports.getProtoType = getProtoType;
 exports.isNum = isNum;

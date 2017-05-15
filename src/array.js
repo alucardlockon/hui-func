@@ -18,8 +18,7 @@ const forEach = (arr, itf) => {
 
 // 从右遍历数组
 const forEachRight = (arr, itf) => {
-    const length = !arr ? 0 : arr.length
-    let index = length
+    let index = !arr ? 0 : arr.length
 
     while (--index >= 0) {
         if (itf(arr[index], index, arr) === false) {
