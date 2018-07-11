@@ -1,4 +1,7 @@
 # hui-func
+
+[![Build Status](https://travis-ci.org/alucardlockon/hui-func.svg?branch=master)](https://travis-ci.org/alucardlockon/hui-func)
+
 > hui javascript functions
 
 > 个人写的jsuntils
