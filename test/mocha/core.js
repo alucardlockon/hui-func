@@ -2,7 +2,7 @@
  * Created by yuwh on 2017/4/29.
  */
 const assert = require('assert')
-const core = require('../src/core')
+const core = require('../../src/core')
 
 describe('type', function () {
     describe('#isObjectLike()', function () {

@@ -2,7 +2,7 @@
  * Created by yuwh on 2017/4/29.
  */
 const assert = require('assert')
-const type = require('../src/type')
+const type = require('../../src/type')
 
 describe('type', function () {
     describe('#isNum()', function () {

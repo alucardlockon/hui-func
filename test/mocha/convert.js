@@ -2,7 +2,7 @@
  * Created by yuwh on 2017/5/8.
  */
 const assert = require('assert')
-const convert = require('../src/convert')
+const convert = require('../../src/convert')
 
 describe('convert', function () {
     describe('#toNum()', function () {

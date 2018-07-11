@@ -3,7 +3,9 @@
  * 基本函数式函数
  */
 
-// 函子
+/**
+ * 函子
+ */
 class Functor {
     constructor(val) {
         this.val = val
@@ -26,7 +28,9 @@ class Functor {
     }
 }
 
-// Maybe
+/**
+ * Maybe
+ */
 class Maybe extends Functor {
     map(f) {
         return this.val ? Maybe.of(f(this.val)) : Maybe.of(null)
@@ -37,7 +41,9 @@ class Maybe extends Functor {
     }
 }
 
-// Either
+/**
+ * Either
+ */
 class Either extends Functor {
     constructor(left, right) {
         super(right)
@@ -64,7 +70,9 @@ class Either extends Functor {
     }
 }
 
-// 应用
+/**
+ * 应用
+  */
 class Ap extends Functor {
     static of(val) {
         return new Ap(val)

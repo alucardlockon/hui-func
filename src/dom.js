@@ -4,6 +4,11 @@
  */
 const fp = require('./fp')
 
+/**
+ * 根据selector字符查询dom
+ * @param selector
+ * @returns {*}
+ */
 const query = function (selector) {
     selector = selector ? selector.trim() : ''
     if (/^#\w+$/.test(selector)) {

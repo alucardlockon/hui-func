@@ -2,7 +2,7 @@
  * Created by yuwh on 2017/4/29.
  */
 const assert = require('assert')
-const array = require('../src/array')
+const array = require('../../src/array')
 
 describe('array', function () {
     describe('#forEach()', function () {

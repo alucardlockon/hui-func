@@ -3,16 +3,36 @@
  * 核心函数
  */
 
+/**
+ * noConflict
+ * @returns {null}
+ */
 const noConflict = () => {
     let temp = _;
     _ = null;
     return temp;
 }
 
+/**
+ * 是否是Object
+ * @param value
+ * @returns {boolean}
+ */
 const isObjectLike = (value) => typeof value === 'object' && !!value
 
+/**
+ * 是否是Length
+ * @param value
+ * @returns {boolean}
+ */
 const isLength = (value) => typeof value === 'number' && value > -1 && value % 1 === 0
 
+/**
+ * 判断value为null时返回def
+ * @param value 值
+ * @param def 默认值
+ * @returns {string}
+ */
 const nullif = (value, def = '') => value ? value : def
 
 exports.isObjectLike = isObjectLike
