@@ -1,10 +1,12 @@
 /**
  * Created by yuwh on 2017/4/29.
- * 基本函数式函数
+ * # 基本函数式函数
+ * @module fp
  */
 
 /**
  * 函子
+ * @since 0.1.0
  */
 class Functor {
     constructor(val) {
@@ -30,6 +32,7 @@ class Functor {
 
 /**
  * Maybe
+ * @since 0.1.0
  */
 class Maybe extends Functor {
     map(f) {
@@ -43,6 +46,7 @@ class Maybe extends Functor {
 
 /**
  * Either
+ * @since 0.1.0
  */
 class Either extends Functor {
     constructor(left, right) {
@@ -72,6 +76,7 @@ class Either extends Functor {
 
 /**
  * 应用
+ * @since 0.1.0
   */
 class Ap extends Functor {
     static of(val) {

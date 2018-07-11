@@ -18,3 +18,6 @@ npm run bulid-win
 npm test
 ```
 
+# Documentation
+See doc/jsdoc/hui-func
+
