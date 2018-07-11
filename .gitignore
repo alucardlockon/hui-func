@@ -1,4 +1,7 @@
 .idea
+dist
+package-lock.json
+test/html/hui-func.js
 
 # Logs
 logs
