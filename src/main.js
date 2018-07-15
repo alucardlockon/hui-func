@@ -9,6 +9,7 @@ const type=require('./type')
 const array=require('./array')
 const convert=require('./convert')
 const string=require('./string')
+const ajax=require('./ajax')
 
 module.exports={
     core:core,
@@ -17,5 +18,6 @@ module.exports={
     type:type,
     array:array,
     convert:convert,
-    string:string
+    string:string,
+    ajax:ajax
 };
