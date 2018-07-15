@@ -125,10 +125,14 @@ const distinct = (arr) => {
 /**
  * 数组排序
  * @param arr 数组
- * @param sortf 排序方法
+ * @param sortf 排序方法,可传入string'desc'
  * @returns {DependencyReference[]|*|void} 排序数组
  */
-const sort = (arr, sortf) => arr.sort(sortf)
+const sort = (arr, sortf = ((a, b) => a - b)) => {
+    if(sortf==='desc')
+        sortf = ((a, b) => b - a)
+    return arr.sort(sortf)
+}
 
 exports.forEach = forEach
 exports.first = first

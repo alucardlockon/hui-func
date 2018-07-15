@@ -27,10 +27,26 @@ describe('array', function () {
         })
     })
     describe('#distinct', function () {
-        it('should be ok', function () {
+        it('should be [ 1, 2, 8, 3 ]', function () {
             let arr = [1, 2, 8, 2, 3, 1]
             console.log(array.distinct(arr))
+            assert.deepEqual([1,2,8,3],array.distinct(arr))
+        })
+    })
+
+    describe('#sort', function () {
+        let arr = [1, 2, 8, 2, 3, 1]
+        it('should be [ 8, 3, 2, 2, 1, 1 ]', function () {
             console.log(array.sort(arr, (a, b) => b - a))
+            assert.deepEqual([ 8, 3, 2, 2, 1, 1 ],array.sort(arr, (a, b) => b - a))
+        })
+        it('should be [ 8, 3, 2, 2, 1, 1 ]', function () {
+            console.log(array.sort(arr,'desc'))
+            assert.deepEqual([ 8, 3, 2, 2, 1, 1 ],array.sort(arr,'desc'))
+        })
+        it('should be [ 1, 1, 2, 2, 3, 8 ]', function () {
+            console.log(array.sort(arr))
+            assert.deepEqual([ 1, 1, 2, 2, 3, 8 ],array.sort(arr))
         })
     })
 
