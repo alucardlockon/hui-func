@@ -21,6 +21,12 @@ npm run bulid-win
 npm test
 ```
 
+# 主要工具
+* 字符串
+* 转换
+* 函数
+* 类型判断、转换
+
 # Documentation
 See doc/jsdoc/hui-func
 
